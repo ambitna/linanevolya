@@ -1,19 +1,47 @@
 :root {
     --bg-color: #032471;
     --text-color: #f9f7fe;
-    --heading-font-family: 'Montserrat', sans-serif;
-    --default-font-family: 'Open Sans', sans-serif;
+    --heading-font-family: 'Raleway', sans-serif;
+    --default-font-family: 'Raleway', sans-serif;
+    --akcent-font-family: 'Raleway', sans-serif;
+    --black: #1E2336;
   }
   
   body {
     font-family: var(--default-font-family);
     background-color: var(--bg-color);
   }
-
-  h2 {
+ 
+  h1 {
     font-family: var(--heading-font-family);
     color: var(--text-color) ;
+    font-size: 40px;
+    font-weight: 100;
+  } 
+
+  h2{
+    font-family: var(--heading-font-family);
+    color: var(--text-color) ;
+    font-size: 30px;
+    font-weight: 300;
   }
+  .akcent {
+    font-family: var(--akcent-font-family);
+    color: var(--black);
+    background-color: var(--text-color) ;
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  p {
+    font-family: var(--heading-font-family);
+    color: var(--text-color) ;
+    font-size: 20px;
+  }
+
+  .container-fluid {
+    padding: 0 100px;
+        }
 
   .hero {
     padding: 50px;
@@ -24,5 +52,36 @@
     margin-left: auto;
  }
 
-    
+.footer {
+  margin-top: 200px;
+  text-align: center;
+}
 
+  .footer-text {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--text-color) ;
+  font-size: 15px;
+}
+
+
+a { 
+  color: var(--text-color) ;
+  font-size: 15px;
+}
+
+a:hover { 
+  background: rgb(205, 127, 0); 
+  color: var(--text-color) ;
+  font-size: 15px;
+}
+.content__rotate {
+	width: 50px;
+	height: 50px;
+  background-image: url(images/logo.png);
+  background-size: cover;
+}
+
+.content__rotate:hover {
+	transition: all 0.8s ease 0s;
+  transform: rotate(-360deg);
+}

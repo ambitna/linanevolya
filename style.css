@@ -169,6 +169,10 @@ nav li.active a {
           font-size: 30px;
           font-family: var(--heading-font-family);
        }
+       nav li {
+        display: block;
+        list-style: none;
+      }
 
 }
 

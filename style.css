@@ -171,7 +171,13 @@ nav li.active a {
        }
        nav li {
         line-height: 25px;
-      }
+       }
+
+       nav li .footermenu {
+          line-height: 25px;
+          display: block;
+        }
+      
 
 }
 

@@ -170,8 +170,7 @@ nav li.active a {
           font-family: var(--heading-font-family);
        }
        nav li {
-        display: block;
-        list-style: none;
+        line-height: 25px;
       }
 
 }

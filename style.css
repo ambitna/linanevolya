@@ -70,7 +70,7 @@
   text-align: center;
 }
 
-  .footer-text {
+  li .footer-text .footermenu {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--text-color) ;
   font-size: 15px;
@@ -99,11 +99,13 @@ a:hover {
   transform: rotate(-360deg);
 }
 
+.footermenu {
+  padding: 100px 0 20px;
+}
 
 
 nav {
   padding: 20px 0;
-  font-size: 30px;
   text-align: center;
 }
 
@@ -117,8 +119,9 @@ nav ul {
 nav li {
   display: inline;
   list-style: none;
-  line-height: 42px;
   margin-left: 15px;
+  font-size: 20px;
+  padding: 0 20px;
 }
 
 nav a {
@@ -169,13 +172,10 @@ nav li.active a {
           font-size: 30px;
           font-family: var(--heading-font-family);
        }
-       nav li {
-        line-height: 25px;
-       }
 
        nav li .footermenu {
-          line-height: 25px;
           display: block;
+          font-size: 15px;
         }
       
 

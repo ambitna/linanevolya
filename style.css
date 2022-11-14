@@ -6,7 +6,18 @@
     --akcent-font-family: 'Raleway', sans-serif;
     --black: #1E2336;
   }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
   
+  .bodypage {
+      padding: 0 10px;
+      width: 100%;
+    }
+
   body {
     font-family: var(--default-font-family);
     background-color: var(--bg-color);
@@ -44,7 +55,7 @@
         }
 
   .hero {
-    padding: 50px;
+    padding: 0px;
   } 
 
  .about {
@@ -72,9 +83,9 @@ a {
 a:hover { 
   background: rgb(205, 127, 0); 
   color: var(--text-color) ;
-  font-size: 15px;
+  font-size: 20px;
 }
-.content__rotate {
+.content_rotate {
 	width: 50px;
 	height: 50px;
   background-image: url(images/logo-wh.png);
@@ -90,14 +101,15 @@ a:hover {
 
 nav {
   padding: 20px 0;
+  font-size: 30px;
+  text-align: center;
 }
 
 nav ul {
   padding: 0;
   margin: 0;
   color: var(--text-color) ;
-  font-size: 30px;
-  text-align: center;
+
 }
 
 nav li {
@@ -111,6 +123,8 @@ nav a {
   text-decoration: none;
   color: var(--text-color) ;
   transition: all 100ms ease-in-out;
+  font-size: 20px;
+  text-align: center;
 }
 
 nav a:hover,
@@ -118,6 +132,36 @@ nav li.active a {
   color: var(--text-color) ;
 }
 
+
+@media (max-width: 1000px) {
+
+  .bodypage {
+    padding: 0 10px;
+    width: 100%;
+        }
+
+        h1 {
+          font-size: 30px;
+          font-weight: 100;
+        } 
+      
+        h2{
+          font-size: 20px;
+          font-weight: 300;
+        }
+        .akcent {
+          font-size: 18px;
+          font-weight: 900;
+        }
+
+        .hero {
+          padding: 0px;
+        } 
+
+        .row {
+          min-width: 300px;
+        }
+}
 
 
 
